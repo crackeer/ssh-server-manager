@@ -1,0 +1,81 @@
+{
+  "name": "guanfu-rip",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@arco-design/web-react": "2.44.0",
+    "@bytemd/plugin-frontmatter": "^1.20.2",
+    "@bytemd/plugin-gemoji": "^1.20.2",
+    "@bytemd/plugin-math": "^1.20.2",
+    "@bytemd/plugin-medium-zoom": "^1.20.2",
+    "@tauri-apps/api": "^1.4.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@uvdream/bytemd-plugin-code-copy": "^0.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^5.5.2",
+    "axios": "^1.4.0",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.11.7",
+    "editor.md": "^1.5.0",
+    "filesize": "^10.0.12",
+    "github-markdown-css": "^5.2.0",
+    "highlight.js": "^11.7.0",
+    "jsoneditor": "^9.10.2",
+    "katex": "^0.16.4",
+    "lodash": "^4.17.21",
+    "monaco-editor": "^0.39.0",
+    "monaco-editor-webpack-plugin": "^7.0.1",
+    "next": "^13.2.4",
+    "next-fonts": "^1.5.1",
+    "next-transpile-modules": "^10.0.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-json-view": "^1.21.3",
+    "react-monaco-editor": "^0.52.0",
+    "react-scripts": "5.0.1",
+    "rehype-external-links": "^2.1.0",
+    "rehype-urls": "^1.1.1",
+    "url": "^0.11.0",
+    "vditor": "^3.8.17",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
+    "tauri": "tauri"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@bytemd/plugin-gfm": "^1.17.2",
+    "@bytemd/plugin-highlight": "^1.17.2",
+    "@bytemd/plugin-mermaid": "^1.17.2",
+    "@bytemd/react": "^1.17.2",
+    "@tauri-apps/cli": "^1.4.0",
+    "cross-env": "^7.0.3"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

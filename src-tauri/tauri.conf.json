@@ -1,0 +1,88 @@
+{
+    "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+    "build": {
+        "beforeBuildCommand": "npm run build && npm run export",
+        "beforeDevCommand": "npm run dev",
+        "devPath": "http://localhost:3000",
+        "distDir": "../out"
+    },
+    "package": {
+        "productName": "guanfu-rip",
+        "version": "0.1.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": true,
+            "fs": {
+                "all": true,
+                "scope": [
+                    "**"
+                ]
+            },
+            "http": {
+                "all": true,
+                "scope": ["http://10.11.1.3/*", "https://realsee.cn/*"],
+                "request": true
+            },
+            "protocol": {
+                "all" : true,
+                "asset": true,
+                "assetScope": ["**"]
+            },
+            "clipboard": {
+                "all": true, 
+                "writeText": true,
+                "readText": true
+            }
+        },
+        "bundle": {
+            "active": true,
+            "category": "SSH",
+            "copyright": "",
+            "deb": {
+                "depends": []
+            },
+            "externalBin": [],
+            "icon": [
+                "icons/32x32.png",
+                "icons/128x128.png",
+                "icons/128x128@2x.png",
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ],
+            "identifier": "com.tauri.dev.ssh-server-manager",
+            "longDescription": "",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "providerShortName": null,
+                "signingIdentity": null
+            },
+            "resources": [],
+            "shortDescription": "",
+            "targets": "all",
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": ""
+            }
+        },
+        "security": {
+            "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self' 'unsafe-inline'",
+            "devCsp": "default-src 'self'; img-src 'self' asset: http://asset.localhost; style-src 'self' 'unsafe-inline'"
+        },
+        "updater": {
+            "active": false
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "height": 800,
+                "resizable": true,
+                "title": "SSH Server Manager",
+                "width": 1200
+            }
+        ]
+    }
+}
